@@ -2,12 +2,13 @@ import React from 'react';
 import LoginForm from './LoginForm';
 import Header from './Header';
 
-const LoginPage = () => {
+const LoginPage = (props) => {
+    console.log(props);
     return (
-        <div>
+        <div className="login-page">
             <Header />
             <div className="center-25" >
-                <LoginForm />
+                <LoginForm props={props}/>
             </div>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import FormikRegistrationForm from './FormikRegistrationForm';
+
 import Header from './Header';
 
 
@@ -10,7 +10,7 @@ const RegistrationPage = () => {
             <div className="container">
 
                 <h1 className="title">Registration Form</h1>
-                <FormikRegistrationForm />
+                
             </div>
         </div>
 
