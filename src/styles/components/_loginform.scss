@@ -14,10 +14,26 @@
 
 
 .login-button{
-    margin-top: 10px;
     background-color: #0BC9CD;
     border-radius: 5px;
     border: blanchedalmond 0.2px solid;
+    color: black;
+    width:30%;
+    margin-left:35%;
+    margin-top:10px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.axios-errors{
+    font-weight: 600;
+    color:red;
+    font-size: 16px;
 }
 
 

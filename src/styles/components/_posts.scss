@@ -1,0 +1,81 @@
+.grid-container{
+    
+    display:grid;
+    grid-columns:10% auto auto;
+    grid-template-rows: min-content;
+    grid-template: "side-menu saved-posts other-posts";
+    text-align: center;
+    
+}
+
+.side-menu{
+    grid-area: side-menu;
+    background-color: #456990;
+    height:100%;
+    width:180px;
+    border-right: 1px solid;
+}
+.saved-posts{
+    grid-area: saved-posts;
+    display:flex;
+    width: 500px;
+    height:800px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-self: auto;
+    margin-left:20px;
+    overflow-y: scroll; 
+    
+}
+
+.other-posts{
+    grid-area: other-posts;
+    height:800px;
+    width: 500px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow-y: scroll; 
+}
+
+.card{
+    margin:3px;
+    height:280px;
+    display: flex;
+}
+.card-content{
+    font-size: 8px;
+  }
+.card-title{
+ font-size: 10px;
+}
+
+.card-button{
+    justify-self: end;
+}
+
+.card-content{
+  font-size: 8px;
+}
+
+.filters-container{
+ display:flex;
+ flex-direction: column;
+ margin: 10px;
+ border-bottom: 1px solid gray;
+ 
+}
+.filter-input{
+    width:150px;
+    margin:5px;
+}
+
+.filter-label{
+    margin:5px;
+    font-weight: 300;
+}
+.addPostForm > p{
+    font-size: 10px;
+    margin:5px;
+    padding:0;
+}

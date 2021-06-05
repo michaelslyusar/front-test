@@ -3,14 +3,16 @@ import { Route,Redirect } from 'react-router-dom';
 
 
 const ProtectedRoute = ({ component: Component, ...rest}) => {
+    
+    console.log('Protected',sessionStorage.getItem('token'));
     return(
         <Route
             {...rest}
             render={props => {
-                if(localStorage.getItem('token') == 'Sincere@april.biz'){
+                if(sessionStorage.getItem('token')){
                     return <Component {...props} />;
                 }else{
-                    return <Redirect to="/" />
+                    return <Redirect to="/" />;
                 }
             }}
         />

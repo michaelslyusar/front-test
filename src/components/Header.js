@@ -7,8 +7,8 @@ function Header() {
                 Home
             </div>
             <div className="header-login-menu">
-                <button className="login-menu-button">Login</button>
-                <button className="login-menu-button">Register</button>
+                <button className="login-menu-button" id="login-button">Login</button>
+                <button className="login-menu-button" id="register-button">Register</button>
             </div>
         </div>
     )
